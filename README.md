@@ -28,10 +28,10 @@ This commands includes
 <BR>
 • Other IP Commands e.g. show ip route etc.
 <BR>
-```
-PROGRAM :
 
-CLIENT :
+# PROGRAM :
+
+# CLIENT :
 ```
 import socket
 from pythonping import ping
@@ -46,7 +46,7 @@ while True:
     except KeyError:
         c.send("Not Found".encode())
 ```
-SERVER:
+# SERVER:
 ```
 import socket
 s=socket.socket()
@@ -56,7 +56,7 @@ while True:
     s.send(ip.encode())
     print(s.recv(1024).decode())
 ```
-TRACEROUTE COMMAND :
+# TRACEROUTE COMMAND :
 ```
 from scapy.all import*
 target = ["www.google.com"]
